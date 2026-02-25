@@ -24,7 +24,7 @@ Currently, my only successfull projects are:
 
 [Yahoo!Messenger Skinning Guide](https://github.com/KassRo26/YahooMessenger-Skinning-Guide)
 
-But I plan on making much more!
+But I plan on making many more!
 
 ## Where can I find you?
 
