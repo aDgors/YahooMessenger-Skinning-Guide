@@ -24,3 +24,15 @@ Currently, my only successfull projects are:
 
 [Yahoo!Messenger Skinning Guide](https://github.com/KassRo26/YahooMessenger-Skinning-Guide)
 
+But I plan on making much more!
+
+## Where can I find you?
+
+If you need help with anything you think I can do, you can find me in these places:
+
+- Discord - @kassro
+- [IRC4Fun](https://irc4fun.net/)
+- Stoat - KassRo#7261
+- Yahoo!Messenger - kassro
+
+
