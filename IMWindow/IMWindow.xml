@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  SKIN TEMPLATE — IMWindow/IMWindow.xml                      ║
+  ║                                                              ║
+  ║  Overrides for the IM conversation window layout.           ║
+  ║                                                              ║
+  ║  INSTRUCTIONS:                                               ║
+  ║  1. Set toolbar_back.png as your custom toolbar background  ║
+  ║  2. Adjust resizemargin right value for your artwork width  ║
+  ║  3. The MainToolbarArea margin fix removes a 2px gap        ║
+  ║  4. Status bar alpha values control text transparency       ║
+  ║  5. Remove this file entirely to use Default layout.        ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<theme app="Y!Msgr" version="2" >
+
+  <section id="IMWindow">
+
+    <!--
+      MainToolbarArea: Container for the IM toolbar buttons.
+
+      margin="7,0,0,0":
+        Removes the default 2px top gap between the menu bar and toolbar.
+        Default value is "7,2,0,0" — changing top from 2 to 0 closes the gap.
+        This is important when your menubar and toolbar artwork should
+        appear seamless.
+
+        Remove this override if you WANT the default 2px gap.
+    -->
+    <override id="IMWnd.MainToolbarArea" margin="7,0,0,0" />
+
+    <!--
+      ToolbarArea: The IM toolbar background.
+
+      imagefile: Your custom toolbar background image.
+        Typical size: ~200x44px
+        Place character artwork on the RIGHT side of this image.
+        The left side should be a solid/subtle color that can tile.
+
+      resizemargin="0,0,ARTWORK_WIDTH,0":
+        ARTWORK_WIDTH = pixels reserved on right for your artwork
+        → Example: 144 (Teto), 190 (Miku)
+        → The remaining left portion tiles to fill the toolbar width
+    -->
+    <override id="IMWnd.ToolbarArea"
+        imagefile="toolbar_back.png"
+        resizemargin="0,0,144,0"/>
+
+    <!--
+      Status bar transparency overrides.
+      Lower alpha = more transparent (0=invisible, 255=fully opaque).
+      These make the status bar text subtler to not clash with artwork.
+      Remove these overrides to keep default full-opacity status bar text.
+    -->
+    <override id="IMWnd.StatusBarTag" alpha="69" />
+    <override id="IMWnd.StatusBar" alpha="107" />
+    <override id="IMWnd.StatusBarUrl" alpha="107" />
+    <override id="IMWnd.StatusBarUrl2" alpha="107" />
+
+  </section>
+
+</theme>

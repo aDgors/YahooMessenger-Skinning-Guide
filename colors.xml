@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<theme>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  SKIN TEMPLATE — colors.xml                                 ║
+  ║                                                              ║
+  ║  Instructions:                                               ║
+  ║  1. Choose DARK or LIGHT base (see examples below each ID)  ║
+  ║  2. Replace placeholder values with your color scheme        ║
+  ║  3. Hex format: "RRGGBB" or decimal: "R,G,B"               ║
+  ║  4. The syscolors block MUST use decimal R,G,B format       ║
+  ╚══════════════════════════════════════════════════════════════╝
+
+  COLOR SCHEME QUICK REFERENCE:
+  ─────────────────────────────
+  Pick ONE primary hue and derive your palette:
+
+  DARK THEME (like Ruby Red - Teto):
+    Primary BG:    Deep saturated color (e.g., 133,3,35)
+    Text:          Near-white (e.g., f3f3f3)
+    Accent:        Lighter tint of primary (e.g., 9d4a5e)
+    Disabled:      Gray (e.g., 999999)
+
+  LIGHT THEME (like Icy Blue - Hatsune Miku):
+    Primary BG:    Light pastel (e.g., 219,231,245)
+    Text:          Dark gray/black (e.g., 333333)
+    Accent:        Darker shade of primary (e.g., 496992)
+    Disabled:      Gray (e.g., 999999)
+-->
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- WINDOW FRAME & CHROME                                      -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <colors>
+    <!-- Main window background fill -->
+    <!-- DARK: 133,3,35    LIGHT: 219,231,245 -->
+    <color id="mainwndbackcolor" value="YOUR_BG_COLOR"/>
+
+    <!-- Title bar text (active window) -->
+    <!-- DARK: f3f3f3      LIGHT: FFFFFF -->
+    <color id="activemaincaption" value="YOUR_ACTIVE_CAPTION"/>
+
+    <!-- Title bar text (inactive window) -->
+    <!-- DARK: 999999      LIGHT: 7a8180 -->
+    <color id="itactivemaincaption" value="YOUR_INACTIVE_CAPTION"/>
+
+    <!-- Frame window caption (active) -->
+    <!-- DARK: f3f3f3      LIGHT: FFFFFF -->
+    <color id="activecaption" value="YOUR_ACTIVE_CAPTION"/>
+
+    <!-- Frame window caption (inactive) -->
+    <!-- DARK: 999999      LIGHT: CCCCCC -->
+    <color id="itactivecaption" value="YOUR_INACTIVE_CAPTION"/>
+
+    <!-- Tool window caption (active) -->
+    <!-- DARK: 333333      LIGHT: 333333 -->
+    <color id="activetoolcaption" value="333333"/>
+
+    <!-- Tool window caption (inactive) -->
+    <!-- DARK: cdcdcd      LIGHT: cdcdcd -->
+    <color id="itactivetoolcaption" value="cdcdcd"/>
+
+    <!-- Window frame accent line -->
+    <!-- DARK: 94,114,139  LIGHT: 94,114,139 -->
+    <color id="windowframe" value="94,114,139"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TEXT & CONTENT                                             -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Default body text -->
+    <!-- DARK: f3f3f3      LIGHT: 333333 -->
+    <color id="text" value="YOUR_TEXT_COLOR"/>
+
+    <!-- Disabled/grayed text -->
+    <color id="text_disabled" value="999999"/>
+
+    <!-- System hyperlinks (Messenger-generated) -->
+    <!-- DARK: ffffff       LIGHT: 000000 -->
+    <color id="text_hyperlink" value="YOUR_HYPERLINK_COLOR"/>
+
+    <!-- User hyperlinks (status, user links) -->
+    <color id="text_user_hyperlink" value="576cd7"/>
+
+    <!-- Network links (Buzz, vitality) -->
+    <color id="text_vitality" value="41aee5"/>
+
+    <!-- System notification text -->
+    <!-- DARK: f3f3f3      LIGHT: 000000 -->
+    <color id="text_sys_notif" value="YOUR_TEXT_COLOR"/>
+
+    <!-- Status message default color -->
+    <!-- DARK: cccccc      LIGHT: 999999 -->
+    <color id="text_status_default" value="YOUR_STATUS_TEXT"/>
+
+    <!-- Tooltip -->
+    <color id="tooltip" value="ffffe1"/>
+    <color id="tooltip_text" value="000000"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BUTTONS                                                    -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Button label — normal -->
+    <!-- DARK: f3f3f3      LIGHT: 333333 -->
+    <color id="buttontext" value="YOUR_BUTTON_TEXT"/>
+
+    <!-- Button label — hover -->
+    <!-- DARK: f3f3f3      LIGHT: 51,51,51 -->
+    <color id="buttontext_h" value="YOUR_BUTTON_TEXT_HOVER"/>
+
+    <!-- Button label — pressed -->
+    <!-- DARK: f3f3f3      LIGHT: 0 -->
+    <color id="buttontext_p" value="YOUR_BUTTON_TEXT_PRESSED"/>
+
+    <!-- Button label — disabled -->
+    <color id="buttontext_d" value="999999"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MENUS                                                      -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Main menu bar text (on the window frame) -->
+    <color id="mainmenubartext" value="dcdcdc"/>
+    <color id="mainmenubartext_h" value="FFFFFF"/>
+    <color id="mainmenubartext_d" value="888888"/>
+    <color id="mainmenubartext_p" value="FFFFFF"/>
+
+    <!-- Sub-menu bar text (dropdown bars) -->
+    <color id="menubartext" value="333333"/>
+    <color id="menubartext_h" value="FFFFFF"/>
+    <color id="menubartext_d" value="888888"/>
+    <color id="menubartext_p" value="333333"/>
+
+    <!-- Dropdown menu item text -->
+    <color id="menuitemtext" value="333333"/>
+    <color id="menuitemtext_h" value="FFFFFF"/>
+    <color id="menuitemtext_d" value="888888"/>
+    <color id="menuitemtext_p" value="333333"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SELECTION & FOCUS                                          -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Selection/highlight background -->
+    <!-- DARK: 9d4a5e (accent tint)  LIGHT: 496992 (accent shade) -->
+    <color id="selected_bg" value="YOUR_ACCENT_COLOR"/>
+
+    <!-- Selection text -->
+    <!-- DARK: f3f3f3      LIGHT: ffffff -->
+    <color id="selected_text" value="ffffff"/>
+
+    <!-- Control background (text fields, list areas) -->
+    <color id="ctrl_bg" value="ffffff"/>
+
+    <!-- Control background when focused -->
+    <!-- DARK: 9d4a5e      LIGHT: 7695bf -->
+    <color id="ctrl_focused_bg" value="YOUR_ACCENT_COLOR"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- BUDDY LIST / GROUPS                                        -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Group header background/accent -->
+    <!-- DARK: 9d4a5e      LIGHT: 496992 -->
+    <color id="groupheader" value="YOUR_ACCENT_COLOR"/>
+
+    <!-- Group header text -->
+    <!-- DARK: f3f3f3      LIGHT: ffffff -->
+    <color id="groupheader_text" value="ffffff"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TOOLBAR & BARS                                             -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Toolbar border/separator -->
+    <!-- Should match mainwndbackcolor for seamless look -->
+    <color id="toolbar_border" value="YOUR_BG_COLOR"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SLOT MANAGER / PLUGINS                                     -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Gap color between plugin slots -->
+    <!-- DARK: 4a0000 (dark variant)  LIGHT: 7583be (accent) -->
+    <color id="slotborder_gap" value="YOUR_SLOT_GAP_COLOR"/>
+
+  </colors>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- SYSTEM COLORS (Windows control overrides)                  -->
+  <!--                                                            -->
+  <!-- These override Windows system colors within Y!M windows.   -->
+  <!-- ALL values MUST be decimal R,G,B format.                   -->
+  <!--                                                            -->
+  <!-- Replace YOUR_BG with your mainwndbackcolor in R,G,B        -->
+  <!-- Replace YOUR_TEXT with your text color in R,G,B             -->
+  <!-- Replace YOUR_ACCENT with your selection color in R,G,B     -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <syscolors>
+    <!--                                DARK example     LIGHT example    -->
+    <color id="COLOR_SCROLLBAR"         value="YOUR_BG"/>     <!-- 133,3,35     219,231,245 -->
+    <color id="COLOR_BACKGROUND"        value="YOUR_BG"/>
+    <color id="COLOR_ACTIVECAPTION"     value="YOUR_BG"/>
+    <color id="COLOR_INACTIVECAPTION"   value="YOUR_BG"/>
+    <color id="COLOR_MENU"              value="YOUR_BG"/>
+    <color id="COLOR_WINDOW"            value="YOUR_BG"/>
+    <color id="COLOR_WINDOWFRAME"       value="YOUR_BG"/>
+    <color id="COLOR_MENUTEXT"          value="YOUR_TEXT"/>   <!-- 243,243,243  51,51,51    -->
+    <color id="COLOR_WINDOWTEXT"        value="YOUR_TEXT"/>
+    <color id="COLOR_CAPTIONTEXT"       value="YOUR_TEXT"/>
+    <color id="COLOR_ACTIVEBORDER"      value="YOUR_BG"/>
+    <color id="COLOR_INACTIVEBORDER"    value="YOUR_BG"/>
+    <color id="COLOR_APPWORKSPACE"      value="YOUR_BG"/>
+    <color id="COLOR_HIGHLIGHT"         value="YOUR_ACCENT"/> <!-- 157,74,94    73,105,146  -->
+    <color id="COLOR_HIGHLIGHTTEXT"     value="YOUR_TEXT"/>
+    <color id="COLOR_BTNFACE"           value="YOUR_BG"/>
+    <color id="COLOR_BTNSHADOW"         value="YOUR_BG"/>
+    <color id="COLOR_GRAYTEXT"          value="153,153,153"/>
+    <color id="COLOR_BTNTEXT"           value="YOUR_TEXT"/>
+    <color id="COLOR_INACTIVECAPTIONTEXT" value="153,153,153"/>
+    <color id="COLOR_BTNHIGHLIGHT"      value="YOUR_BG"/>
+    <color id="COLOR_3DDKSHADOW"        value="YOUR_BG"/>
+    <color id="COLOR_3DLIGHT"           value="YOUR_BG"/>
+    <color id="COLOR_INFOTEXT"          value="YOUR_TEXT"/>
+    <color id="COLOR_INFOBK"           value="YOUR_BG"/>
+    <color id="COLOR_3DFACE"            value="YOUR_BG"/>
+    <color id="COLOR_3DSHADOW"          value="YOUR_BG"/>
+    <color id="COLOR_HOTLIGHT"          value="YOUR_ACCENT"/>
+  </syscolors>
+
+</theme>

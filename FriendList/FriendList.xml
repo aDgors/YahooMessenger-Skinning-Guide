@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  SKIN TEMPLATE — FriendList/FriendList.xml                  ║
+  ║                                                              ║
+  ║  Overrides for the main buddy list window layout.           ║
+  ║                                                              ║
+  ║  INSTRUCTIONS:                                               ║
+  ║  1. The MePanel resizemargin controls artwork space in the  ║
+  ║     "me" profile area at the top of the buddy list.         ║
+  ║  2. Set the right value to your artwork width in pixels.    ║
+  ║  3. Place matching artwork in your me_bg.png image.         ║
+  ║  4. Remove this file entirely to use Default layout.        ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<theme app="Y!Msgr" version="2" >
+
+  <section id="FriendList">
+
+    <!--
+      MePanel: The user's profile section at the top of the buddy list.
+
+      resizemargin="2,59,ARTWORK_WIDTH,1":
+        2px left, 59px top, ARTWORK_WIDTH px right (artwork), 1px bottom
+        → Set ARTWORK_WIDTH to match your me_bg.png artwork area
+        → Example: 160 reserves 160px on the right for character art
+
+      The me_bg.png image should be sized so the right side contains
+      your character/decorative artwork, and the left side is a solid
+      or subtle background that can tile.
+    -->
+    <override id="MePanel" dock="top" resizemargin="2,59,160,1" />
+
+  </section>
+
+</theme>

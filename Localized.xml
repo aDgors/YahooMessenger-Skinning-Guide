@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Set LocalizedName to the display name shown in the Y!M skin picker.
+  Example: "My Custom Skin", "Ruby Red - Kasane Teto", etc.
+-->
+<theme LocalizedName="Your Skin Name">
+</theme>

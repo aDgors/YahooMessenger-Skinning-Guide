@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  SKIN TEMPLATE — theme/theme.xml                            ║
+  ║                                                              ║
+  ║  Uses <style> redefinitions (Ruby Red - Teto approach)      ║
+  ║  for maximum control over window frames and controls.       ║
+  ║                                                              ║
+  ║  INSTRUCTIONS:                                               ║
+  ║  1. Replace image filenames with your custom images         ║
+  ║  2. Adjust resizemargin values to match YOUR image sizes    ║
+  ║  3. Set title position or use -100,-100 to hide             ║
+  ║  4. Remove any <style> blocks you don't need (falls back    ║
+  ║     to Default)                                              ║
+  ║                                                              ║
+  ║  RESIZEMARGIN QUICK REF:                                    ║
+  ║    resizemargin="left, top, right, bottom"                  ║
+  ║    resizemargin_top="left_fixed, stretch, right_fixed, 0"   ║
+  ║    right_fixed = YOUR ARTWORK WIDTH (pixels)                ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
+<theme>
+<styles>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MAIN WINDOW FRAME (buddy list)                             -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!--
+    Image: mainframewindow.png (ref: 190x128)
+    This is the border image for the main buddy list window.
+
+    resizemargin "4,44,4,5":
+      4px left border, 44px top (title bar height), 4px right, 5px bottom
+
+    resizemargin_top "10,0,ARTWORK_WIDTH,0":
+      10px left fixed, 0px stretch, ARTWORK_WIDTH px right fixed
+      → Set ARTWORK_WIDTH to the pixel width of your title bar artwork
+      → Example: 170 for large artwork, 50 for small icon
+
+    title_xpos/ypos:
+      Position of the window title text.
+      Use -100,-100 to hide the title (if you have a custom logo instead).
+  -->
+  <style id="mainframewindow"
+      imagefile="mainframewindow.png"
+      logo="Yahoo!_Messenger.png"
+      ellipsis="ellipsis.png"
+      resizemargin="4,44,4,5"
+      resizemargin_top="10,0,170,0"
+      resizemargin_bottom="3,0,9,0"
+      resizemargin_left="0,0,0,9"
+      resizemargin_right="0,0,0,9"
+      active_font="defaultfontbold" active_textcolor="activemaincaption"
+      inactive_font="defaultfontbold" inactive_textcolor="itactivemaincaption"
+      icon_xpos="10" icon_ypos="7"
+      title_xpos="-100" title_ypos="-100"/>
+  <!-- To show title text instead of hiding it:
+       title_xpos="30" title_ypos="0"  -->
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- FRAME WINDOW (IM/chat windows, secondary windows)          -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!--
+    Image: framewindow.png (ref: 190x192 Teto, 190x96 Miku)
+    This frames IM conversation windows and other secondary windows.
+
+    resizemargin "3,28,2,4":
+      3px left, 28px top (title bar), 2px right, 4px bottom
+      NOTE: right=2 (reduced from Default's 5) to minimize the right
+      edge gap when toolbar/menubar artwork extends to the edge.
+      See THEME_CUSTOMIZATION_GUIDE.md for the full explanation.
+
+    resizemargin_top "10,0,ARTWORK_WIDTH,0":
+      Same concept as mainframewindow — set your artwork width.
+  -->
+  <style id="framewindow"
+      imagefile="framewindow.png"
+      resizemargin="3,28,2,4"
+      resizemargin_top="10,0,170,0"
+      resizemargin_bottom="0,0,9,0"
+      resizemargin_left="0,1,0,9"
+      resizemargin_right="0,1,0,9"
+      active_font="defaultfontbold" active_textcolor="activecaption"
+      inactive_font="defaultfontbold" inactive_textcolor="itactivecaption"
+      icon_xpos="10" icon_ypos="6"
+      title_xpos="30" title_ypos="0"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TOOL WINDOW (popups, small dialogs)                        -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!--
+    Image: toolwindow.png (ref: 97x74)
+    Usually doesn't need artwork — just recolor to match your theme.
+  -->
+  <style id="toolwindow"
+      imagefile="toolwindow.png"
+      resizemargin="2,17,2,3"
+      active_font="defaultfontbold" active_textcolor="activetoolcaption"
+      inactive_font="defaultfontbold" inactive_textcolor="itactivetoolcaption"
+      icon_xpos="5" icon_ypos="3"
+      title_xpos="18" title_ypos="0"/>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- MENU                                                       -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!--
+    Controls the menu bar and dropdown menus.
+
+    resizemargin_baritem="4,0,MENUART_WIDTH,0":
+      4px left fixed, 0 stretch, MENUART_WIDTH px right fixed
+      → Set MENUART_WIDTH to your menubar.png artwork area width
+      → Example: 91 for medium artwork
+
+    If you don't need custom menu art, you can remove resizemargin_baritem
+    or remove this entire block to fall back to Default.
+  -->
+  <style id="menu"
+      imagefile="menu_bg.png"
+      imagefile_menuitem="menuitem.png"
+      imagefile_mainbaritem="mainmenubar.png"
+      imagefile_baritem="menubar.png"
+      resizemargin_baritem="4,0,91,0" />
+
+</styles>
+</theme>
