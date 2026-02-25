@@ -3,7 +3,9 @@
 > A comprehensive guide & reusable boilerplate for creating custom skins
 
 **Author:** KassRo
+
 **Created:** February 2026
+
 **Based on:** Default, Ruby Red - Teto, Icy Blue - Hatsune Miku and more.
 
 > **Note:** This documentation is a living document — it is progressively expanded and refined as new skins are being developed. Expect new sections, tips, and corrections to appear over time as more edge cases and techniques are discovered through hands-on skin work.
