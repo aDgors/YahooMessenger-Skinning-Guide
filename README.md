@@ -1,12 +1,14 @@
-# Yahoo!Messenger
+# [Press here to get to the guide directly.(Opens template-guide.md)](template-guide.md)
+
+## Yahoo!Messenger
 
 Yahoo! Messenger (sometimes abbreviated Y!M) was an instant messaging client and associated protocol created and formerly operated by Yahoo!. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Yahoo_Messenger))
 
-# Details
+## Details
 
 As of 2024, misboon took the challenge of reviving the client and gathering a small number of developers/designers to work on the project, currently known as [BuZZd! Chat](https://buzzd.chat/).
 
-# Why did I do this?
+## Why did I do this?
 
 As one of the people out of my generation to have used Y!M in the past, I challenged myself by making custom skins, starting with VOCALOID characters as a base for my ideas.
 
