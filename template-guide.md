@@ -1,4 +1,4 @@
-# Yahoo! Messenger Skin Template Plan
+# Yahoo! Messenger Skin Template Guide
 
 > A comprehensive guide & reusable boilerplate for creating custom skins
 
