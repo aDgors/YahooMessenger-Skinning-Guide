@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<theme>
+<styles>
+<!-- the imagefile should have both the active and inactive states in it (identical sizes) -->
+      	<override id="mainframewindow" imagefile="mainframewindow.png" logo="Yahoo!_Messenger.png" resizemargin="4,24,4,24"/>
+</theme>

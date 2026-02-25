@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<theme>
+<styles>
+<!-- the imagefile should have both the active and inactive states in it (identical sizes) -->
+      	<style id="mainframewindow" imagefile="mainframewindow.png" logo="Yahoo!_Messenger.png"
+                ellipsis="ellipsis.png" 
+				resizemargin="4,44,4,5"
+				resizemargin_top="10,0,170,0"
+				resizemargin_bottom="3,0,9,0"
+				resizemargin_left="0,0,0,9"
+				resizemargin_right="0,0,0,9"
+				active_font="defaultfontbold" active_textcolor="activemaincaption"
+				inactive_font="defaultfontbold" inactive_textcolor="itactivemaincaption"
+				icon_xpos="10" icon_ypos="7"
+				title_xpos="-100" title_ypos="-100"/>
+				
+		<style id="framewindow" imagefile="framewindow.png"
+			resizemargin="3,28,2,4"
+			resizemargin_top="10,0,170,0"
+			resizemargin_bottom="0,0,9,0"
+			resizemargin_left="0,1,0,9"
+			resizemargin_right="0,1,0,9"
+				active_font="defaultfontbold" active_textcolor="activemaincaption"
+				inactive_font="defaultfontbold" inactive_textcolor="itactivemaincaption"
+				icon_xpos="10" icon_ypos="6"
+				title_xpos="30" title_ypos="0"/>
+		<style id="toolwindow"  imagefile="toolwindow.png"
+				resizemargin="2,17,2,3"
+				resizemargin_top="13,0,13,0"
+				resizemargin_bottom="3,0,3,0"
+				resizemargin_left="0,1,0,3"
+				resizemargin_right="0,1,0,3"
+				active_font="defaultfontnormal" active_textcolor="activecaption"
+				inactive_font="defaultfontnormal" inactive_textcolor="itactivecaption"
+				icon_xpos="5" icon_ypos="5"
+				title_xpos="24" title_ypos="3"/>
+		
+		<!-- Menu bar styling - prevent stretching -->
+		<style id="menu"		
+				imagefile="menu_bg.png"
+				imagefile_buttons="menu_scroll.bmp"
+				imagefile_menuitem="menuitem.png"
+				imagefile_mainbaritem="mainmenubar.png"
+				imagefile_baritem="menubar.png"
+				resizemargin_baritem="4,0,91,0" />
+  	</styles>
+</theme>
